@@ -24,9 +24,9 @@ public class Main {
         }
 
         do {
-            int lastDigit = number % 10;
-            sumDigit += lastDigit;
-            number = number / 10;
+            int digit = number % 10;
+            sumDigit += digit;
+            number /= 10;
         } while (number > 0);
 
         return sumDigit;
